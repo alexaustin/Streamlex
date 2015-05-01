@@ -1,0 +1,151 @@
+span {
+
+	margin: 0.25em;
+
+	vertical-align: middle;
+
+	color: #FFF;
+	font-size: 0.75em;
+
+}
+
+div#mediaBox {
+
+	z-index: -1;
+
+	position: fixed;
+	top: 4.0em;
+	left: 5%;
+
+	height: 36.0em;
+	width: 64.0em;
+	min-width: 360px;
+
+	margin: 0.5em auto 0.5em auto;
+	padding: 0.5em;
+
+	background: #222;
+	border: thin solid #666;
+	border-radius: 0.4em;
+	
+	float: left;
+
+}
+
+div#mediaDiv {
+
+	position: relative;
+	top: 0;
+
+	height: 100%;
+	width: 100%;
+
+	margin: auto;
+
+	background: #888;
+
+}
+
+div#mediaControlDiv {
+
+	z-index: 1;
+
+	visibility: hidden;
+
+	position: absolute;
+	bottom: 1.0em;
+
+	height: 8.0em;
+	width: 100%;
+
+	padding: 0;
+
+	background: #222;
+
+	opacity: 0.0;
+	transition: opacity 2s;
+
+}
+div#mediaControlDiv:hover {
+
+	opacity: 1.0;
+
+}
+
+div.buttonDiv {
+
+	height: 2.0em;
+	width: 2.0em;
+
+	padding: 0.5em;
+
+	float: left;
+
+}
+div.buttonDiv:hover {
+
+	background: #444;
+
+}
+
+div#statsDiv {
+
+	height: 2.0em;
+	width: 100%;
+
+	padding: 0.5em;
+
+	clear: both;
+
+}
+
+div#seekDiv {
+
+	height: 3.0em;
+	width: 100%;
+
+	padding: 0;
+
+	background: #222;
+
+	clear: both;
+
+}
+div#seekDiv:hover {
+
+	background: #444;
+
+}
+
+div#seekHandle {
+
+	position: absolute;
+
+	height: 3.0em;
+	width: 1.0em;
+
+	background: #200;
+
+	clear: both;
+
+}
+div#seekHandle:hover {
+
+	background: #900;
+
+}
+
+
+video {
+
+	z-index: 0;
+
+	position: absolute;
+	top: 0;
+	left: 0;
+
+	height: 100%;
+
+}
+
+

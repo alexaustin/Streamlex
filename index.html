@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+
+<html lang="en">
+
+	<head>
+		
+		<title>Streamlex</title>
+
+
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+		<link rel="stylesheet" type="text/css" href="../styles/menu.css">
+
+		<link rel="stylesheet" type="text/css" href="../styles/player.css">
+
+
+		<script type="text/javascript" src="../scripts/menu.js"></script>
+
+		<script type="text/javascript" src="../scripts/player.js"></script>
+		
+	</head>
+
+
+	<body onresize="formatPage()" onload="formatPage()">
+
+		<div id="menuDiv">
+
+			<div id="hideShowDiv" onClick="hideShow()">
+				
+				<img src="../images/menu/menuhandle.png"></img>
+
+			</div>
+
+		</div>
+
+		<div id="mediaMenuDiv"></div>
+
+
+		<div id="mediaBox">
+
+			<div id="mediaDiv">
+
+				<div id="mediaControlDiv">
+				
+					<div id="statsDiv">
+
+						<span id="time">00:00:00</span>
+
+						<span id="duration">00:00:00</span>
+	
+						<span id="speed">Speed: 1x</span>
+		
+						<span id="volume">Volume: 100%</span>
+
+						<span id="mediaTitle">300</span>
+
+					</div>
+
+	
+					<div id="playDiv" class="buttonDiv" onclick="playPauseMedia()">
+
+						<img id="playImg" src="../images/player/play.png"></img>
+
+					</div>
+
+					<div id="restartDiv" class="buttonDiv" onclick="restartMedia()">
+
+						<img src="../images/player/restart.png"></img>
+
+					</div>
+
+					<div id="slowDiv" class="buttonDiv" onclick="slowMedia()">
+
+						<img src="../images/player/slow.png"></img>
+
+					</div>
+
+					<div id="fastforwardDiv" class="buttonDiv" onclick="fastforwardMedia()">
+
+						<img src="../images/player/fastforward.png"></img>
+
+					</div>
+
+					<div id="volumeupDiv" class="buttonDiv" onclick="volumeupMedia()">
+
+						<img src="../images/player/volumeup.png"></img>
+
+					</div>
+
+					<div id="volumedownDiv" class="buttonDiv" onclick="volumedownMedia()">
+
+						<img src="../images/player/volumedown.png"></img>
+
+					</div>
+
+					<div id="volumeonDiv" class="buttonDiv" onclick="volumeonMedia()">
+
+						<img id="volumeonImg" src="../images/player/volumeon.png"></img>
+
+					</div>
+
+	
+					<div id="seekDiv" onclick="seekGo()">
+	
+						<div id="seekHandle"></div>
+
+					</div>
+
+				</div>
+
+
+	
+				<video id="mediaPlayer" preload="auto" oncanplay="showControls()" ontimeupdate="updateCurrentTime()">
+
+					<source id="mediaSource" src="../media/300.mp4" type="video/mp4">
+					Unsupported Browser
+
+				</video>
+
+			</div>
+
+		</div>
+
+	</body>
+
+</html>
